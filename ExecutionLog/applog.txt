@@ -1,0 +1,6 @@
+INFO    2019-12-25 01:16:41,095 [main] io.github.bonigarcia.wdm.WebDriverManager  - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+INFO    2019-12-25 01:16:41,166 [main] io.github.bonigarcia.wdm.WebDriverManager  - Exporting webdriver.chrome.driver as C:\Users\DELL\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+INFO    2019-12-25 01:17:02,167 [main] utils.Constants  -  number of leagues :- 227
+INFO    2019-12-25 01:17:06,246 [main] utils.Constants  -  mercurytours home page opened 
+INFO    2019-12-25 01:17:06,766 [main] utils.Constants  -  credentials entered
+INFO    2019-12-25 01:18:08,367 [main] utils.Constants  -  login button clicked

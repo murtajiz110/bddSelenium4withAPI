@@ -1,0 +1,170 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "hit api to get list of all leagues",
+        "description": "",
+        "id": "invoke-the-api-get-all-leagues-list;hit-api-to-get-list-of-all-leagues",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8272848400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I invoke the api to get all leagues information",
+            "match": {
+              "location": "StepsApiGetAllLeagues.iInvokeTheApiToGetAllLeaguesInformation()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 456271700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I get the list of all available leagues",
+            "match": {
+              "location": "StepsApiGetAllLeagues.iGetTheListOfAllAvailableLeagues()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4455000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Validate the count of leagues",
+            "match": {
+              "location": "StepsApiGetAllLeagues.iValidateTheCountOfLeagues()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "invoke the API get all leagues list",
+    "description": "",
+    "id": "invoke-the-api-get-all-leagues-list",
+    "keyword": "Feature",
+    "uri": "APIgetAllLeagues.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@api"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Login mercurytours website with valid credentials",
+        "description": "",
+        "id": "login-mercurytours-complete-feature;login-mercurytours-website-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3372121700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to mercurytours login page",
+            "match": {
+              "location": "StepsLogin.I_navigate_to_mercurytours_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 516545000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter valid \"toptal1\" and \"testing#1\" values",
+            "match": {
+              "arguments": [
+                {
+                  "val": "toptal1",
+                  "offset": 15
+                },
+                {
+                  "val": "testing#1",
+                  "offset": 29
+                }
+              ],
+              "location": "StepsLogin.I_enter_valid_username_and_password_values(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61600218200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click sign in button",
+            "match": {
+              "location": "StepsLogin.I_click_sing_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18876500,
+              "error_message": "java.lang.AssertionError: did not expect to find [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat testActions.MercuryToursHome_tests.verifyLandingPageIsShown(MercuryToursHome_tests.java:33)\r\n\tat steps.StepsLogin.My_landing_page_is_shown(StepsLogin.java:42)\r\n\tat ✽.Then My landing page is shown(Login.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "My landing page is shown",
+            "match": {
+              "location": "StepsLogin.My_landing_page_is_shown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I logout the application",
+            "match": {
+              "location": "StepsLogin.iLogoutTheApplication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login MercuryTours complete feature",
+    "description": "",
+    "id": "login-mercurytours-complete-feature",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Login"
+      }
+    ]
+  }
+]
